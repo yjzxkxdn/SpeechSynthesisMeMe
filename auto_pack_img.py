@@ -133,7 +133,7 @@ images = load_images_from_folder(folder)
 stitched_image = stitch_images_bin_packing(images)
 
 
-cv2.imwrite('auto_img_zh_cn.png', stitched_image)
+cv2.imwrite('images/auto_img_zh_cn.png', stitched_image)
 
 
 # folder = 'en'
