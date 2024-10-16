@@ -33,11 +33,13 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install opencv-python numpy  # 安装必要的依赖包
-
+    - name: Run image stitching script
+      run: |
+        python auto_pack_img.py  # 运行你的 Python 脚本（替换为你的脚本文件名）
     - name: Run image stitching script
       run: |
         mkdir images
-        ./auto_pack_img.py
+        # ./auto_pack_img.py
 
     - name: Upload Pages artifact
       uses: actions/upload-pages-artifact@v3
